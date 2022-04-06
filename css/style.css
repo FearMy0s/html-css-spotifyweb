@@ -7,17 +7,22 @@
 body{
     background-color: #141922;
 }
-
+.foot-hr{
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 15px;
+width: 80%;
+}
 header{
     z-index: 9;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: rgba(0,0,0,0.5);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    width: calc(100vw - 180px);
     height: 100px;
 }
 
@@ -36,6 +41,7 @@ header{
 }
   .icons{
     font-size: 25px;
+    vertical-align: middle;
     }
   .home{
        border-left: 2px solid  greenyellow;
@@ -55,10 +61,9 @@ header{
   }
 
 .main-nav{
-    position: fixed;
     display: flex;
     flex-flow: column wrap;
-    background-color: black;
+    background-color: black; 
     width: 180px;
     height: calc(100vh - 100px);
     top: 0;
@@ -74,15 +79,15 @@ header{
 .main-nav li{
     color: rgb(131, 128, 128);
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 14px;   
     margin-left: 25px;
     list-style: none;
 }
 .nav-foot{
     justify-content: flex-end;
+    margin-top: auto;
+
 }
-
-
 
 footer{
     display: flex;
