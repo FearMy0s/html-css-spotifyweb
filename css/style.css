@@ -41,7 +41,6 @@ header{
 }
   .icons{
     font-size: 25px;
-    vertical-align: middle;
     }
   .home{
        border-left: 2px solid  greenyellow;
@@ -57,10 +56,11 @@ header{
   }
   .fade{
    color: rgb(131, 128, 128);
-   margin-left: 25px;
+   margin-left: 20px;
   }
 
 .main-nav{
+    position: fixed;
     display: flex;
     flex-flow: column wrap;
     background-color: black; 
@@ -88,6 +88,48 @@ header{
     margin-top: auto;
 
 }
+.music-section{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 100px;
+    left: 180px;
+}
+.central-nav{
+    display: flex;
+    flex-flow: row wrap;
+    height: 80px;
+    width: 100vw;
+    justify-content: center;
+    margin-right: 200px;
+
+}
+.picked{
+    border-bottom: 2px solid greenyellow;
+}
+.central-nav h4{
+    margin-left: 20px;
+    color: rgb(131, 128, 128);
+}
+.albums{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.albums img{
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
+}
+.titles{
+    margin-left: 25px;
+}
+.sub-titles{
+    margin-left: 25px;
+    color: rgb(131, 128, 128);
+}
 
 footer{
     display: flex;
@@ -101,13 +143,75 @@ footer{
     left: 0;
     z-index: 10;
 }
+.footer-left {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
 .footer-left img{
     width: 50px;
     height: 50px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+.infos h5{
+    color: white;
+}
+.infos h6{
+    color: rgb(131, 128, 128);
+}
+
+.player{
+    margin-top:20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-right: 50px;
+
+}
+.player i{
+    color: white;
+    padding-left: 20px;
+
+}
+.player-line{
     margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-right: 10px;
+}
+.player-line span{
+    font-size: 10px;
+    color: white;
+    margin-right: 10px;
     margin-left: 10px;
 }
-.footer-left{
+.play{
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    border-radius: 2px;
+}
+.time{
+    width: 500px;
+    height: 5px;
+    border-radius: 2px;
+    background-color:rgb(131, 128, 128) ;
+}
+.footer-right{
     display: flex;
     flex-flow: row;
+    align-items: center;
+}
+.footer-right i{
+    color: white;
+    margin-right: 15px;
+}
+.volume-line{
+    width: 100px;
+    margin-right: 20px;
+}
+.volume-size{
+    width: 20px;
 }
